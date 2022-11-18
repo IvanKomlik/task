@@ -24,4 +24,10 @@ fun main (){
 //  animalsCarnivorous + id () ЧТОБЫ ПОЛУЧИТЬ animalsHerbivorous1, animalsHerbivorous2 И Т.Д.
 //  ЕСТЬ ЛИ СИНТАСИС НАПИСАНИЯ ОБОЗНАЧЕНИЯ ПЕРЕМЕННОЙ  В ЦИКЛЕ СОЕДИНЕНИЕМ?
 //
+
+    var listOfHerbivorous List<AnimalsHerbivorous> = listOf(animalsHerbivorous1, animalsHerbivorous2, animalsHerbivorous3, animalsHerbivorous4)
+    
+    for(index in 0..listOfHerbivorous.indicies){
+        println(listOfHerbivorous[index].name)
+    }
 }
