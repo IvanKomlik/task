@@ -9,12 +9,16 @@ fun main (){
     var animalsCarnivorous3 = AnimalsCarnivorous("Лев",true,7)
     var animalsCarnivorous4 = AnimalsCarnivorous("Ягуар",true,8)
     var animalsCarnivorous5 = AnimalsCarnivorous("Гепард",true,2)
-
+    
+    var listOfCarnivorous:List<AnimalsCarnivorous> = listOf(animalsCarnivorous1, animalsCarnivorous2, animalsCarnivorous3, animalsCarnivorous4)
+   
     var animalsHerbivorous1 = AnimalsHerbivorous("Заяц",false, 2)
     var animalsHerbivorous2 = AnimalsHerbivorous("Олень",false, 12)
     var animalsHerbivorous3 = AnimalsHerbivorous("Кабан",false, 4)
     var animalsHerbivorous4 = AnimalsHerbivorous("Крот",false, 1)
     var animalsHerbivorous5 = AnimalsHerbivorous("Слон",false, 21)
+    
+    var listOfHerbivorous:List<AnimalsHerbivorous> = listOf(animalsHerbivorous1, animalsHerbivorous2, animalsHerbivorous3, animalsHerbivorous4)
 
     println("Наименование: "+animalsCarnivorous1.name+", Питается мясом: "+animalsCarnivorous1.meat+ ", Возраст: "+animalsCarnivorous1.age)
     println("Наименование: "+animalsCarnivorous2.name+", Питается мясом: "+animalsCarnivorous2.meat+ ", Возраст: "+animalsCarnivorous2.age)
@@ -23,5 +27,15 @@ fun main (){
 // for (id 1....5)
 //  animalsCarnivorous + id () ЧТОБЫ ПОЛУЧИТЬ animalsHerbivorous1, animalsHerbivorous2 И Т.Д.
 //  ЕСТЬ ЛИ СИНТАСИС НАПИСАНИЯ ОБОЗНАЧЕНИЯ ПЕРЕМЕННОЙ  В ЦИКЛЕ СОЕДИНЕНИЕМ?
+// Komlik: Ниже пример
 //
+
+    for(i in 0..listOfCarnivorous.indices){
+        println(listOfCarnivorous[i].name)
+    }
+    
+     for(i in 0..listOfHerbivorous.indices){
+        println(listOfCarnivorous[i].name)
+    }
 }
+
